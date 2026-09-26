@@ -75,6 +75,29 @@ DOOR 生态建立在 **Cloudflare** 之上，做到全球边缘就近响应、�
 
 ---
 
+## 🎙 SoundLoop Recorder · 声环录制器
+
+一款轻量的**屏幕声音录制工具**：一键捕获电脑扬声器输出的所有声音（走 WASAPI 回环，**不含麦克风**），录制后可裁剪多余片段，并一键导出为 MP3。内置中英文界面，一键切换。
+
+A lightweight **system-audio recorder**: one click captures everything your speakers play (via WASAPI loopback, **microphone-free**), trim out the parts you don't need, then export to MP3. Built-in Chinese/English UI, switchable with one click.
+
+| 能力 Capability | 说明 Notes |
+|---|---|
+| **系统声音捕获** | WASAPI loopback，只录扬声器输出 Loopback capture — speakers only |
+| **录音管理** | 列表播放 / 删除 / 清空 Play / delete / clear from list |
+| **时间裁剪** | 按起止秒数剪掉多余片段 Trim by start/end seconds |
+| **导出 MP3** | 内置 ffmpeg，转 MP3 导出 Built-in ffmpeg, MP3 export |
+| **双语界面** | 中文 ⇄ English 一键切换 One-click language toggle |
+
+```bash
+# 依赖 Dependencies
+pip install numpy soundcard imageio-ffmpeg
+# 运行 Run
+python SoundLoop_recorder.py
+```
+
+---
+
 ## 🔐 安全 · Security
 
 - 全站 HTTPS，边缘防 DDoS
